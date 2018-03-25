@@ -1,0 +1,115 @@
+<html>
+<head>
+<link rel="manifest" href="./manifest.json">
+<H2><B><MARQUEE>HOTEL RESERVATION FORM</MARQUEE></B>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["address"].value;
+    if (x == "") {
+        alert("address must be filled out");
+        return false;
+    }
+}
+</script>
+
+</head>
+<body bgcolor="pink">
+
+<form name="myForm" action="hotel.html"
+onsubmit="return validateForm()" method="post"><br>
+<CENTER>
+  <br>
+  </big></big>
+  <table width:="100%">
+    <tbody>
+     <tr>
+        <td> NAME: <br>
+        </td>
+
+        <td><input name="doc_name" type="text" required><br>
+        </td>
+      </tr>
+<tr>
+        <td>GENDER: <br>
+        </td>
+        <td>
+		<input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+        </td>
+      </tr>
+
+      <tr>
+        <td>EMAIL : <br>
+        </td>
+        <td><input name="id" type="text" required><br>
+        </td>
+      </tr>
+<tr>
+        <td>PHONE : <br>
+        </td>
+        <td><input name="PH" type="number" required><br>
+        </td>
+      </tr>
+      <tr>
+        <td>ADDRESS : <br>
+        </td>
+        <td><textarea cols="30" rows="3" name="address"></textarea><br>
+        </td>
+      </tr>
+ <tr>
+        <td>ARRIVAL DATE : <br>
+        </td>
+        <td><input name="date" type="date" required><br>
+        </td>
+      </tr>
+ <tr>
+        <td>DEPARTURE DATE: <br>
+        </td>
+        <td><input name="DATE" type="DATE" required><br>
+        </td>
+      </tr>
+      <tr>
+<td>ROOM</td>
+<td>
+<select name="City">
+<option value="Select" selected>SELECT</option>
+<option value="WITH AC">WITH AC</option>
+<option value="WITHOUT AC">WITHOUT AC</option>
+
+</select>
+</td>
+</tr>
+<td>PEOPLE</td>
+<td>
+<select name="City">
+<option value="Select" selected>SELECT</option>
+<option value="ONE">1</option>
+<option value="TWO">2</option>
+<option value="THREE">3</option>
+<option value="MANY">MANY</option>
+
+</select>
+</td>
+</tr>
+      <tr>
+        <td>COMMENTS :<br>
+        </td>
+        <td><textarea cols="30" rows="3" name="comments" required></textarea><br>
+        </td>
+      </tr>
+      <tr>
+        <td>IMPROVEMENTS :<br>
+        </td>
+        <td><textarea cols="30" rows="3" name="instructions" required></textarea> </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+  <input name="submit" value="SUBMIT" type="submit">&nbsp; &nbsp; 
+  </big></big></form>
+</CENTER>
+<script src="hstl.js"></script>
+</body>
+</HTML>
